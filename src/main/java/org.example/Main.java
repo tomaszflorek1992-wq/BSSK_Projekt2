@@ -12,10 +12,10 @@ public class Main {
             Scanner scanner = new Scanner(System.in);
             System.out.println("=== SYSTEM BEZPIECZNEJ REJESTRACJI ===");
 
-            System.out.print("Podaj nazwę użytkownika: ");
+            System.out.print("Podaj nazwe uzytkownika do rejestracji: ");
             String username = scanner.nextLine();
 
-            System.out.print("Podaj hasło: ");
+            System.out.print("Podaj haslo: ");
             String password = scanner.nextLine();
 
             dbManager.saveUser(username, password);
@@ -24,7 +24,7 @@ public class Main {
 
         } catch (Exception e) {
             System.err.println("BŁĄD KRYTYCZNY: " + e.getMessage());
-            System.err.println("Upewnij się, że ustawiono MASTER_KEY w zmiennych środowiskowych!");
+            System.err.println("Upewnij się, że ustawiono MASTER_KEY w zmiennych srodowiskowych!");
         }
     }
 }
